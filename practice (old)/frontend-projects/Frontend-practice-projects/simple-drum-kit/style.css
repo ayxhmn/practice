@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #212121;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px transparent;
+    padding: 30px 10px;
+
+    &>h1 {
+        background-color: black;
+        color: aliceblue;
+    }
+}
+
+#btk-bar {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(public/background-images/full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    border: 1px transparent;
+    padding: 120px 10px 360px 10px;
+
+    &>div {
+        background-color: whitesmoke;
+        border: 1px transparent;
+        border-radius: 18px;
+        padding: 30px 30px;
+        margin: 30px 30px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            /* box-shadow: 20px 20px; */
+            background-color: purple;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+#instructions {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px 25px;
+    border-radius: 36px;
+    background-color: rgba(18, 17, 17, 0.4);
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.0rem;
+    text-align: center;
+
+    &>*{
+        background-color: rgba(18, 17, 17, 0.2);
+    }
+}
+
+#credit {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 25px 25px;
+    border-radius: 36px;
+    color: whitesmoke;
+    font-weight: lighter;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #btk-bar {
+        flex-direction: column;
+        background-image: url(public/background-images/mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #instructions {
+        display: none;
+    }
+}
+
+.flash {
+    box-shadow: 20px 20px;
+    background-color: purple !important;
+    color: white !important;
+}

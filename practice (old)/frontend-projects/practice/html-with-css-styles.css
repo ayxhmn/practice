@@ -1,0 +1,56 @@
+body {
+    background-color: aliceblue;
+}
+
+@keyframes anim {
+    to {
+        transform: rotateX(-30deg) rotateZ(10deg);
+        text-shadow: 2px 1px;
+        box-shadow: 20px 20px;
+        background-color: coral;
+    }
+}
+
+#top-bar {
+    text-align: center;
+    font-family: verdana;
+    background-color: lightskyblue;
+    border: solid 1px;
+    padding: 30px 30px;
+}
+
+#sign-up-section {
+    text-align: center;
+    font-family: Verdana;
+    background-color: bisque;
+    border: transparent 5px;
+    padding: 20px 20px;
+}
+
+#rotate-div {
+    text-align: center;
+    font-family: Verdana;
+    background-color: red;
+    border: transparent 5px;
+    padding: 20px 20px;
+    display: inline-block;
+    margin: 50px 0 0 600px;
+}
+
+#rotate-div:hover {
+    animation-name: anim;
+    animation-duration: 5s;
+}
+
+.top-bar-button {
+    background-color: aliceblue;
+    border: transparent 5px;
+    padding: 5px 5px 10px 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.top-bar-button:hover {
+    background-color: lightskyblue;
+    color: crimson;
+}

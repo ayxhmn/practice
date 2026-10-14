@@ -1,0 +1,22 @@
+<a href="#home">Home</a>
+<a href="#about">About</a>
+
+<div id="view"></div>
+
+<script>
+  function renderRoute() {
+    const hash = window.location.hash;
+    const view = document.getElementById('view');
+
+    if (hash === '#home') {
+      view.innerHTML = '<h2>Home Page</h2>';
+    } else if (hash === '#about') {
+      view.innerHTML = '<h2>About Page</h2>';
+    } else {
+      view.innerHTML = '<h2>Welcome!</h2>';
+    }
+  }
+
+  window.addEventListener('hashchange', renderRoute);
+  window.addEventListener('load', renderRoute);
+</script>
